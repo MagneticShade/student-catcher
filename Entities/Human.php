@@ -68,7 +68,7 @@ class Human {
     public function getInitials() : string
     {
         return $this->getLastName() .' ' .
-            mb_substr($this->getFirstName(), 0, 1) . '.'
+            mb_substr($this->getFirstName(), 0, 1) . '.' .
             $this->getLastName() === null
                 ? null
                 : ' ' . mb_substr($this->getLastName(), 0, 1) . '.';
