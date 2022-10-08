@@ -31,7 +31,7 @@ class Human {
 
     public function getBirthDate() : DateTime
     {
-        return $this->birthDate->format('d-m-Y');
+        return $this->birthDate;
     }
 
     public function getGender() : string
